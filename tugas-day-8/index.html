@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Formulir Pendaftaran Ekstrakurikuler</title>
+</head>
+<body style="background-color: rgb(42, 119, 167); color: rgb(255, 255, 255); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <h1>Formulir Pendaftaran Ekstrakurikuler</h1>
+
+    <form action="" method="POST"></form>
+    <h2>Data Diri Santri</h2>
+
+    <label for="nama" style="margin: 20px;">Nama Lengkap Santri:</label>
+    <input type="text" 
+    id="nama"
+    name="nama"
+    placeholder="Contoh Raihan"
+    required>
+    <br> <br>
+
+    <label for="email" style="margin: 20px;">Email Orang Tua/Wali:</label>
+    <input type="email"
+    id="email"
+    name="email"
+    placeholder="nama@contoh.com"
+    required>
+    <br> <br>
+
+    <label for="telepon" style="margin: 20px;">Nomor Telepon/WA Santri:</label>
+    <input type="tel" 
+    id="telepon"
+    name="telepon"
+    placeholder="+6282128729007">
+    <br> <br>
+
+    <label for="tgl-lahir" style="margin: 20px;">Tanggal Lahir Santri:</label>
+    <input type="date" id="tgl-lahir" 
+    name="tgl-lahir" style="margin: 20px; margin-top: 6px;">
+
+    <p>Jenis Kelamin:</p>
+    <label style="margin: 20px; margin-top: 10px;">
+        <input type="radio" name="jenis-kelamin" value="laki-laki">
+        Laki-laki
+    </label>
+    
+    <label>
+        <input type="radio" name="jenis-kelamin" value="perempuan">
+        Perempuan
+    </label> <br> <br>
+
+    <h3> Upload Foto Santri:</h3>
+    <label for="foto"> Kirim Melalui File:
+        <input type="file"
+        id="foto"
+        name="foto"
+        required>
+    </label> <br> <br>
+
+    <p>Ekstrakurikuler yang diminati (boleh lebih dari satu):</p>
+
+    <label style="padding: 10px;">
+        <input type="checkbox"
+        name="minat"
+        value="Futsal">
+        Futsal
+    </label>
+
+    <label>
+        <input type="checkbox"   
+        name="minat" 
+        value="Voli"> 
+        Voli
+    </label>
+
+    <label>
+        <input type="checkbox" 
+        name="minat" 
+        value="Berenang, Memanah & Berkuda"> 
+        Berenang, Memanah & Berkuda
+    </label>
+    <br> <br> <br>
+
+    <label for="jenjang" style="padding: 10px;">Jenjang Saat Ini:</label> <br>
+    <select id="jenjang" name="jenjang" required style="padding: 10px;">
+        <option value="">-- Pilih Jenjang--</option>
+        <option value="SD">SD</option>
+        <option value="SMP">SMP</option>
+        <option value="SMA">SMA</option>
+    </select>
+    <br><br><br>
+
+
+    <label for="alasan" style="padding: 10px;">
+        Alasan Singkat Mengikuti Ekstrakurikuler:
+    </label> <br>
+
+    <textarea name="alasan" style="color: black;"
+        id="alasan"
+        rows="15"
+        cols="50"
+        placeholder="Ceritakan sedikit tentang diri anda...">
+    </textarea>
+
+
+    <label style="margin: 20px;">
+        <input type="checkbox"
+        name="setuju"
+        required>
+        Saya menyetujui   
+        <a href="syarat-ketentuan"> Syarat & Ketentuan</a>
+    </label>
+    <br>
+
+    <input type="submit" style="font-size: 20px; margin: 5px;"
+    value="Daftar Sekarang">
+
+</body>
+</html>
